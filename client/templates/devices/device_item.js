@@ -1,7 +1,17 @@
 Template.deviceItem.helpers({
-  domain: function() {
-    var a = document.createElement('a');
-    a.href = this.url;
-    return a.hostname;
+  info: function() {
+    return topic;
+  }
+});
+
+Template.deviceItem.events({
+  'click #value_on' (){
+    Devices.insert({ topic: "value", message: "1", broadcast: true });
+  }
+});
+
+Template.deviceItem.events({
+  'click #value_off' (){
+    Devices.insert({ topic: "value", message: "0", broadcast: true });
   }
 });
