@@ -1,5 +1,5 @@
 Meteor.methods({
-  'events.reset'(){
+  'devices.reset'(){
     Devices.remove({});
   },
   'devices.list'(){

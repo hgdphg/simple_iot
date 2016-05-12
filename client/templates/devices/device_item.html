@@ -1,12 +1,12 @@
 <template name="deviceItem">
   <div class="device">
     <div class="device-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{info}}</span></h3>
+      <h3><a href="{{url}}">{{title}}</a><span>{{infomation}}</span></h3>
     </div>
     {{#if message}}
-    <button id="value_off" class="discuss btn btn-default">On</button>
+    <button id="value_off" class="discuss btn btn-default">Off</button>
     {{else}}
-    <button id="value_on" class="discuss btn btn-default">Off</button>
+    <button id="value_on" class="discuss btn btn-default">On</button>
     {{/if}}
   </div>
 </template>
