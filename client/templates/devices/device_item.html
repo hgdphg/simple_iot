@@ -1,7 +1,8 @@
 <template name="deviceItem">
-  <div class="device">
+
+  <div class="device" style="repost {{extraColor}}">
     <div class="device-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{infomation}}</span></h3>
+    <h3><a href="{{url}}">{{title}}</a><span>{{infomation}}</span></h3>
     </div>
     {{#if message}}
     <button id="value_off" class="discuss btn btn-default">Off</button>
